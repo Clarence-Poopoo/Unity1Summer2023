@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CinemachineTarget
   - PlayerCapsule
+  - BoulderReset
   layers:
   - Default
   - TransparentFX
