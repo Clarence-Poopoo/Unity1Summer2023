@@ -9,17 +9,21 @@ public class MessageScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerExit(Collider other)
     {
-        messageBox.SetActive(false);
+        if (other.gameObject.CompareTag("Player"))
+        {
+            messageBox.SetActive(false);
+        }
+
     }
 }

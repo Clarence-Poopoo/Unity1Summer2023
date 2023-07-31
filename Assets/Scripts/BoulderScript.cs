@@ -36,7 +36,7 @@ public class BoulderScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "PlayerCapsule")
+        if(collision.gameObject.tag == "Player")
         {
             //Turns off character controller
             collision.gameObject.transform.parent.GetComponent<CharacterController>().enabled = false;
@@ -57,6 +57,5 @@ public class BoulderScript : MonoBehaviour
     {
         transform.position = startPos;
         rb.velocity = Vector3.zero;
-        score.AddScore();
     }
 }
